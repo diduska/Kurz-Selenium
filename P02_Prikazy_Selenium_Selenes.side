@@ -1,0 +1,98 @@
+{
+  "id": "719ecdca-f69f-4879-8700-774bc8e5ec72",
+  "version": "2.0",
+  "name": "P02_Prikazy_Selenium_Selenes",
+  "url": "https://www.google.sk/",
+  "tests": [{
+    "id": "d0ddfad7-b1fb-4fb7-b2a6-52b701918e02",
+    "name": "TC_001_Otvorenie_Web_Stranok",
+    "commands": [{
+      "id": "3fb6f715-9b8d-46ad-b9ec-158b386f2a8d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50584d01-4afa-45e0-8567-37776539755a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32f5dd48-088e-4994-9fb3-a036f7d23e16",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43cae741-2806-45f8-b4a3-0debfc172f8f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.alza.sk/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b5c2de38-2098-44f5-ac18-8f24fe417037",
+    "name": "TC_002_Cakanie_Element_Wait",
+    "commands": [{
+      "id": "72fef82b-8782-4176-b22c-3ddf3af6fb2e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ed5cf6d-c707-4492-bfe8-8eaff2649ece",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [
+        ["css=.fb_logo", "css:finder"],
+        ["xpath=//img[@alt='Facebook']", "xpath:img"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "165447c9-40a6-4423-b7c9-ebcdfafbdc55",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ce1ffc4-cb93-41c0-b6ca-9323c2fbfc97",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Ústredný portál verejných služieb ľuďom']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "19701361-bc20-469d-9bc2-f168d21d94b5",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspesny",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aa5a1861-5887-4fe3-bd8d-3d00d04add85",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d0ddfad7-b1fb-4fb7-b2a6-52b701918e02"]
+  }],
+  "urls": ["https://www.google.sk/"],
+  "plugins": []
+}
